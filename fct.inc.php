@@ -3,12 +3,16 @@
 
     function entete($titre) 
     {
-        echo "<html>
+        echo "
+        <!DOCTYPE html>
+        <html>
         <head>
         <title>$titre</title>
         <link rel=\"stylesheet\" type=\"text/css\" href=\"site.css\">
         </head>
-        <body>";
+        <body>
+        <img class=\"img-logo\" src=\"./images/BNF-Logo.png\" alt=\"Logo BNF\">"
+        ;
     }
 
 

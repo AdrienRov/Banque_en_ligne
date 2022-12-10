@@ -3,7 +3,7 @@
     ini_set("display_errors",1);
     include("fct.inc.php");
 
-    entete("Liste des clients");
+    entete("Formulaire");
     if(isset($_POST['nom']) && isset($_POST['mdp']))
     {
         insertClient($_POST['nom'],$_POST['mdp']);
@@ -38,9 +38,9 @@
         //faire un formulaire pour ajouter un client
         echo "<form action=\"Formulaire.php\" method=\"post\">";
         echo "<table>";
-        echo "<tr><td>nom</td><td><input type=\"text\" name=\"nom\" required /></td></tr>";
-        echo "<tr><td>mdp</td><td><input type=\"password\" name=\"mdp\" required /></td></tr>";
-        echo "<tr><td><input type=\"submit\" value=\"Ajouter\" /></td></tr>";
+        echo "<tr><td>Nom</td><td><input type=\"text\" name=\"nom\" required /></td></tr>";
+        echo "<tr><td>Mot de passe</td><td><input type=\"password\" name=\"mdp\" required /></td></tr>";
+        echo "<tr><td></td><td><input type=\"submit\" value=\"Valider\" /></td></tr>";
         echo "</table>";
         echo "</form>";
 
