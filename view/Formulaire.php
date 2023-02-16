@@ -1,7 +1,7 @@
 <?php
     error_reporting(E_ALL);
     ini_set("display_errors",1);
-    include("model/fct.inc.php");
+    include("../model/fct.inc.php");
 
     entete("Formulaire");
     if(isset($_POST['nom']) && isset($_POST['mdp']) && isset($_POST['prenom']) && isset($_POST['numero']) && isset($_POST['mail']))
@@ -36,7 +36,7 @@
     function contenu()
     {
         //formulaire pour ajouter un client
-        echo"<img class=\"img-logo\" src=\"./images/BNF-Logo.png\" alt=\"Logo BNF\">";
+        echo"<img class=\"img-logo\" src=\"../images/BNF-Logo.png\" alt=\"Logo BNF\">";
 
         echo "<div class=\"form\">";
         echo "<form action=\"Formulaire.php\" method=\"post\">";

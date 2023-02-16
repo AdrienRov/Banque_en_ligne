@@ -1,5 +1,5 @@
 <?php
-    require("data/DB.inc.php");
+    require("../data/DB.inc.php");
 
     function entete($titre) 
     {
@@ -8,7 +8,7 @@
         <html>
         <head>
         <title>$titre</title>
-        <link rel=\"stylesheet\" type=\"text/css\" href=\"site.css\">
+        <link rel=\"stylesheet\" type=\"text/css\" href=\"../style/site.css\">
         </head>
         <body>
         <header>

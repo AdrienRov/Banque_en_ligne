@@ -1,7 +1,8 @@
 <?php
 error_reporting(E_ALL);
 ini_set("display_errors",1);
-    include("model/fct.inc.php");
+    include("../model/fct.inc.php");
+
 
     entete("Connexion");
 
@@ -51,7 +52,7 @@ ini_set("display_errors",1);
 
     function contenu()
     {
-        echo"\t<img class=\"img-logo\" src=\"./images/BNF-Logo.png\" alt=\"Logo BNF\">";
+        echo"\t<img class=\"img-logo\" src=\"../images/BNF-Logo.png\" alt=\"Logo BNF\">";
         echo "<div class=\"conn\">";
         echo "<form action=\"Connexion.php\" method=\"post\">";
         echo "<table>";

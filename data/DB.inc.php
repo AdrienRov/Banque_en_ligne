@@ -1,6 +1,6 @@
 <?php
 
-require 'model/client.inc.php';
+require '../model/client.inc.php';
 
 
 class DB 
