@@ -189,3 +189,37 @@ table{
     background-color: #DDD; /* gris */
     margin-bottom: 1px;
   }
+
+  .block-argent{
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    background-color: whitesmoke;
+    border: 2px solid rgb(107, 107, 107);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+  .block-compte-parent{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .h1-moncompte{
+    font-size: 50px;
+    margin-top: 2%;
+    color: whitesmoke;
+  }
+  .bvn-mess{
+    font-size: 30px;
+    margin-top: 2%;
+    color: whitesmoke;
+  }
+  .argent{
+    font-size: 50px;
+    margin-top: 30%;
+    color: green;
+  }

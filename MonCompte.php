@@ -13,15 +13,27 @@ ini_set("display_errors",1);
         //recupere l'argent du client venant d'un array vers un string
         if( isset($_SESSION['id']) )
         {
-          $db = DB::getInstance();
-           $argent = $db->getClientArgent($_SESSION['mail']);
-           $argent = implode($argent);
+            $db = DB::getInstance();
+            $argent = $db->getClientArgent($_SESSION['mail']);
+            $argent = implode($argent);
+            $argent = explode(":",$argent);
+            $argent = $argent[1];
 
-           echo("<div>
-                <h1>Mon Compte</h1>
-                <p>Vous êtes connecté</p>
-                <p>Vous avez ".$argent." euros</p>
-            </div>");
+            $nom    = $db->getClientNom($_SESSION['mail']);
+            $nom    = implode($nom);
+            $nom    = explode(":",$nom);
+            $nom    = $nom[1];
+            $nom   = explode(" ",$nom);
+            $nom   = $nom[1];
+            echo("<div class=\"block-compte-parent\">
+                    <h1 class=\"h1-moncompte\">Mon Compte</h1>
+                    <p class=\"bvn-mess\">Bienvenue $nom</p>
+                </div>");
+                echo"
+                <div class=\"block-argent\">
+                    <h2 class=\"argent\">$argent €</h2>
+                </div>
+                ";
         }
         else
         {

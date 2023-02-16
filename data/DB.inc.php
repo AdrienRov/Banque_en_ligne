@@ -92,6 +92,13 @@ class DB
 	     return $this->execQuery($requete,array($adr),'Client');
       }
 
+      public function getClientNom($mail)
+      {
+        $requete = 'select nom from client2 where mail = ?';
+        $tparam = array($mail);
+        return $this->execQuery($requete,$tparam,'Client');
+      }
+
       public function getClient($idcli) {
       	     $requete = 'select * from client2 where ncli = ?';
 	     return $this->execQuery($requete,array($idcli),'Client');
